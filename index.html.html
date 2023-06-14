@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<title>travel website</title>
+    <meta name='viewport' content='width-device=width' initial scale="1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #wrap{
+    width:100%;
+}
+.head{
+    width: 100%;
+    height: 110px;
+    background-color: lightblue;
+}
+.head .logo img{
+    width: 15%;
+    height: 110px;
+    margin-left: 20px;
+    margin-top: -14px;
+    padding-top: 30px;
+}
+.callsearch {
+  margin-left: 672px;
+  margin-top: -127px;
+  margin-top: -67px;
+}
+.callsearch i {
+  font-size: 45px; 
+  color:rgb(9, 9, 32);     
+}
+.callsearch i:hover{
+  color:rgb(31, 28, 28);
+}
+.callsearch h3{
+  padding-left: 6px;
+  display: inline-block;
+  padding-top: -60px;
+  color:rgb(26, 35, 44);
+}
+.callsearch h3:hover{
+  color:rgb(96, 85, 85);
+}
+.search{
+  float:right;
+  margin-right: 60px;
+  display: block;
+  margin-top: -45px;
+}
+.search button{
+  padding:7px;
+}
+.search .text {
+  padding: 7px;
+}
+.navbar {
+  width: 100%;
+  height: 70px;
+  line-height: 30px;
+  text-align: center;
+  list-style-type: none; 
+  background-color: #202040;
+}
+.navbar ul{
+  list-style-type:none;
+}
+.navbar ul li{
+  display: inline-block;
+  position: relative;
+}
+.navbar ul li a{
+  display: block;
+  color:white;
+  text-decoration: none;
+  padding:20px 35px;
+  font-size: 20px;
+  font-weight: bold;
+}
+ul li .menu1 li{
+  display: block;
+}
+ul li .menu1{
+  width:300px;
+  background-color: lightblue;
+  position: absolute;
+  display: none;
+}
+ul li a:hover{
+  color:black;
+  background-color: whitesmoke;
+}
+ul li:hover .menu1{
+  display: block;
+  color:antiquewhite;
+  background-color: rgb(17, 82, 104);
+}
+ul li .menu2 li{
+  display: block;
+}
+ul li .menu2{
+  width:300px;
+  background-color:grey;
+  position: absolute;
+  display: none;
+}
+ a:hover{
+  color:black;
+  background-color:darkgrey;
+}
+ul li:hover .menu2{
+  display: block;
+  color:antiquewhite;
+   background-color: rgb(17, 82, 104);
+}
+ul li .menu3 li{
+  display: block;
+}
+ul li .menu3{
+  width:300px;
+  background-color:grey;
+  position: absolute;
+  display: none;
+}
+ a:hover{
+  color:black;
+  background-color:darkgrey;
+}
+ul li:hover .menu3{
+  display: block;
+  color:antiquewhite;
+  background-color: rgb(17, 82, 104);
+}
+ul li .menu4 li{
+  display: block;
+}
+ul li .menu4{
+  width:300px;
+  background-color:grey;
+  position: absolute;
+  display: none;
+}
+ a:hover{
+  color:rgba(0, 0, 0, 0.159);
+  background-color:darkgrey;
+}
+ul li:hover .menu4{
+  display: block;
+  color:antiquewhite;
+  background-color: rgb(17, 82, 104);;
+}
+.navbar li button{
+  border:none;
+  padding:8px;
+  margin-top:8px;
+  margin-left: 60px;
+  border-radius:30px;
+  font-weight: bold;
+  background-color: bisque;
+}
+.navbar li button:hover{
+  background-color: lightseagreen;
+  color:rgb(236, 236, 245);
+}
+.img img{
+  width:100%;
+  height:900px;
+  background-image: cover;
+}
+.para{
+  width:31%;
+  margin-left: 662px;
+  margin-top: -401px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(7 7 38);
+  color: rgb(255 255 255);
+  position:absolute;
+} 
+.para h2{
+  padding-bottom: 10px;
+}
+.rs{
+  width:16%;
+  background-color: rgb(15 29 30 / 70%);
+  color:white;
+  margin-left: 662px;
+  margin-top: -265px;
+  position:absolute;
+}
+.rs p{
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.form{
+    width: 76%;
+    height: 90px;
+    margin-left: 204px;
+    margin-top: -50px;
+    position: absolute;
+}
+.form fieldset{
+  border:solid black 5px;
+  padding:10px;
+  margin-top: -39px;
+  font-size: 22px;
+  color: rgb(24, 24, 29);
+  background-color: white;
+  margin: -40px;
+}
+.form legend{
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  background-color: black;
+}
+form .sub{
+  background-color: navy;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  float: right;
+}
+form button{
+  font-size:18px;
+}
+.about{
+  width:100%;
+  height:1000px;
+  margin-top: -4px;
+  display: inline-block;
+  background-color: #e9decf;
+}
+.about p{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.row{
+  padding-top:30px;
+}
+.row .col1-4 img{
+    width:25%;
+    height: 300px;
+    margin-left: 90px;
+    float:left;
+    box-shadow: 0px 10px 10px rgb(0, 0, 7);
+}
+.row .col2-4 img{
+    width:25%;
+    height: 300px;
+    margin-left: 105px; 
+    float:center;
+    box-shadow: 0px 10px 10px rgb(0, 0, 7);
+}
+.row .col3-4 img{
+    width: 25%;
+    height: 300px;
+    margin-right: 84px;
+    margin-top: -303px;
+    float: right;
+    box-shadow: 0px 10px 10px rgb(0, 0, 7);
+}
+.row1 .col4-6 img{
+    width: 35%;
+    height: 300px;
+    margin-top: 39px;
+    margin-left: 158px;
+    box-shadow: 0px 10px 10px rgb(0, 0, 7);
+}
+.row1 .col5-6 img{
+  width: 35%;
+  height: 300px;
+  float: right;
+  margin-right: 133px;
+  margin-top: -305px;
+  box-shadow: 0px 10px 10px rgb(0, 0, 7);
+}
+.row1 p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -49px;
+    margin-left: 48px;
+}
+.row1 img{
+   width:30%;
+   height: 200px;
+}  
+.para1 p{
+  width: 22%;
+  height: 48px;
+  background-color: rgb(6, 12, 17);
+  color: #eef1f7;
+  position: absolute;
+  margin-top: 253px;
+  margin-left: 113px;
+  padding: 10px;
+  font-size: 20px;
+}
+.para2 p{
+  width: 23%;
+  height: 48px;
+  background-color: rgb(6, 12, 17);
+  color: #eef1f7;
+  position: absolute;
+  margin-top: -52px;
+  margin-left: 590px;
+  padding: 14px;
+  font-size: 20px;
+}
+.para3 p{
+  width: 22%;
+  height: 48px;
+  background-color: rgb(6, 12, 17);
+  color: #eef1f7;
+  position: absolute;
+  margin-top: -51px;
+  margin-left: 1078px;
+  padding: 10px;
+  font-size: 20px;
+}
+.para1 button{
+  margin-left: 74px;
+  font-size: 15px;
+}
+.para2 button{
+  margin-left: 120px;
+  font-size: 15px;
+}
+.para3 button{
+  margin-left: 144px;
+  font-size: 15px;
+}
+.footer{
+  width:100%;
+  height:400px;
+  background-color: white;
+}
+.footer .row1{
+  color: black;
+  padding-top: 30px;
+  padding-left: 43px;
+  font-size: 26px;
+  line-height: 40px;
+}
+.footer .row1:hover{
+  color:grey;
+}
+.footer .row1 tr th a{
+  color: black;
+  text-decoration: none;
+}
+.footer .row1 tr td a{
+  color: black;
+  text-decoration: none;
+}
+.footer .row2{
+  margin-left: 406px;
+  margin-top: -206px;
+  color: black;
+  font-size: 26px;
+  line-height: 40px;
+}
+.footer .row2:hover{
+  color:grey;
+  }
+.footer .row2 tr th a{
+  color: black;
+  text-decoration: none;
+}
+.footer .row2 tr td a{
+  color: black;
+  text-decoration: none;
+}
+.footer .row3{
+  margin-left: 728px;
+  margin-top: -126px;
+  color: black;
+  font-size: 26px;
+  line-height: 40px;
+}
+.footer .row3:hover{
+  color:black;
+}
+.footer .row3 a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  text-align: center;
+  border-radius: 50%;
+  color: black;
+}
+.footer .row3 a:hover{
+  color: #24262b;
+  background-color:#ffffff;
+}
+.footer .row4 {
+  float: right;
+  margin-right: 106px;
+  font-size: 26px;
+  color: black;
+  margin-top: -75px;
+}
+.footer .row4 a{
+  text-decoration: none;
+}
+.footer .row4:hover{
+  color:grey;
+}
+.footer .but{
+  float: right;
+  margin: 21px;
+  margin-top: -17px;
+  padding-right: 13px;
+}
+.footer .b1{
+  font-size: 25px;
+}
+.footer button{
+  font-size: 15px;
+  padding:8px;
+  margin-right:30px;
+  color: white;
+  background-color: rgb(5, 5, 105);
+}
+.footer .row4 tr th a{
+  color: black;
+}
+.footer .row4 tr td a{
+  color: black;
+}
+</style>
+    <body>
+        <div id="wrap">
+            <div class="head">
+                <div class="logo">
+                    <img src="C:\Users\DELL\Downloads\trip-removebg-preview (1).png" alt="image not found">
+                </div>
+                 <div class="callsearch">
+                   <i class="fa fa-phone"></i>
+                    <h3>reach us 24/7<br>    
+                      <strong>+99 (33) 2523 7643</strong></h3>
+                 </div>
+                <div class="search">
+                 <input type="text" class="text" placeholder="Search entire website here">
+                 <button>   
+                 <i class="fa fa-search"></i>
+                  </button>
+                </div>
+            </div>
+        <div class="navbar">
+            <ul>
+              <li><a href="#">Hotels</a>
+              <ul class="menu1"> 
+              <li><a href="#">Hotels in India</a></li>
+              <li><a href="#">International Hotels</a></li>
+              <li><a href="#">International Hostels</a></li>
+              <li><a href="#">Popular Hotels in Europe</a></li>
+              <li><a href="#">Activities</a></li>
+              <li><a href="#">Hotel Deals of the Week</a></li>
+            </ul>
+              </li>
+              <li><a href="#">Flights</a>
+                <ul class="menu2"> 
+                  <li><a href="#">IndiGo</a></li>
+                  <li><a href="#">Air India</a></li>
+                  <li><a href="#">Air India Express</a></li>
+                  <li><a href="#">Go First</a></li>
+                  <li><a href="#">SpiceJet</a></li>
+                  <li><a href="#">GoAir</a></li>
+                  <li><a href="#">TruJet</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Vaccation</a>
+                <ul class="menu3"> 
+                  <li><a href="#">Hawali</a></li>
+                  <li><a href="#">Maldives</a></li>
+                  <li><a href="#">New York City</a></li>
+                  <li><a href="#">kodaikanal</a></li>
+                  <li><a href="#">Wayanad</a></li>
+                  <li><a href="#">Mount Abu</a></li>
+                  <li><a href="#">Coorg</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Hot Deals</a></li>
+              <li><a href="#">Travel Guides</a></li>
+              <li><a href="#">Blogs</a>
+                <ul class="menu4"> 
+                  <li><a href="#">Nomadic Matt</a></li>
+                  <li><a href="#">The Blonde Abroad</a></li>
+                  <li><a href="#">The Planet D</a></li>
+                  <li><a href="#">TravelFreak</a></li>
+                  <li><a href="#">Nomadic Boys</a></li>
+                  <li><a href="#">Trey Ratcliff</a></li>
+                  <li><a href="#">Gogobot</a></li>
+                  </ul>
+              </li>
+            <li><button>SIGN UP</button></li>
+              <li><button>MY ACCOUNT</button></li>
+            </ul>
+          </div>
+        <div class="img">
+            <img src="C:\Users\DELL\Desktop\shopu\travel.jpg" alt="image not found">
+               <div class="para">
+                <h2>Paris Hilton Hotel,Mumbai,India</h2>
+                <h4>Lorem ipsum dolar sit amet,consectelur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,Ut enim ad minim veniam.</h4>
+               </div> 
+               <div class="rs">
+                <p><b>99,084</b> Inclusive of food dinner</p>
+                  </div>
+                <div class="form"> 
+            <form>
+                <fieldset>
+                <legend>Book Your Trip</legend>
+                <label>What?</label>
+                <input type="text">
+                <label>Where?</label>
+                <select>
+                <option>New York</option>
+                <option>Maldives</option>
+                <option>Hawali</option>
+                <option>Wayanad</option>
+                <option>Mount Abu</option>
+                <option>USA</option>
+                <option>Mussoorie</option>
+                <option>Darjeeling</option>
+                </select>
+                <label>when?</label>
+                <input type="date">
+                <label>who?</label>
+                <label>rooms</label>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <label>adults</label>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <label>children</label>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <a href="#" target="blank"><input type="submit" value="SEARCH" class="sub"></a>
+                </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="about">
+            <p>Poupular Hotels</p>
+              <div class="row">
+                  <div class="col1-4">
+                      <img src="C:\Users\DELL\Desktop\shopu\hotel2.jpg">
+                  </div>
+                     <div class="para1">
+                     <p>Timbers Kauai<button> &#8377;1,46,781</button></p>
+                    </div>
+                  <div class="col2-4">
+                    <img src="C:\Users\DELL\Desktop\shopu\hotel1.jpg">
+                  </div>
+                     <div class="para2">
+                     <p>Oberoi Hotels<button> &#8377;1,78,154</button></p>
+                    </div>
+                  <div class="col3-4">
+                    <img src="C:\Users\DELL\Desktop\shopu\hotel3.jpg">
+                  </div>
+                   <div class="para3">
+                     <p>HHurghada Hotel<button> &#8377;1,31,584</button></p>
+                    </div>
+              </div>
+              <p>Hot Deals</p>
+              <div class="row1">
+                  <div class="col4-6">
+                    <img src="C:\Users\DELL\Desktop\shopu\hotdeal1.webp">
+                  </div>
+                  <div class="col5-6">
+                    <img src="C:\Users\DELL\Desktop\shopu\hotdeal2.webp">
+                  </div>
+              </div>
+          </div>
+        <div class="footer">
+            <table class="row1">
+              <tr><th><a href="blank">Company</a></th></tr>
+              <tr><td><a href="blank">About the company</a></td></tr>
+              <tr><td><a href="blank">Terms and Conditions</a></td></tr>
+              <tr><td><a href="blank">Pricavy Policy</a></td></tr>
+              <tr><td><a href="blank">Career</a></td></tr>
+            </table>
+            <table class="row2">
+              <tr><th><a href="blank">Customer Support</a></th></tr>
+              <tr><td><a href="blank">Contact</a></td></tr>
+              <tr><td><a href="blank">FAQ</a></td></tr>
+            </table>
+            <table class="row3">
+              <tr><th>Follow us</th></tr>
+        <tr><td>
+          <a href="#" target="blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" target="blank"><i class="fab fa-twitter"></i></a>
+        </td></tr>
+            </table>
+            <table class="row4">
+              <tr><th><a href="blank">Dont's miss our deals and offers</a></th></tr>
+            </table>
+            <div class="but">
+              <input type="email" class="b1" placeholder="Enter your email id">
+             <a href="#" target="blank"><button><a href="blank">SUBSCRIBE</a></button></a>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
